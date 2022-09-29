@@ -1,10 +1,14 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 export const Header = () => {
     return (
         <div className="navbar bg-base-100">
             <div className="flex-1">
-                <a className="btn btn-ghost normal-case text-xl flex items-centers space-x-2">
+                <Link
+                    className="btn btn-ghost normal-case text-xl flex items-centers space-x-2"
+                    to={'/'}
+                >
                     <svg
                         xmlns="http://www.w3.org/2000/svg"
                         fill="none"
@@ -19,7 +23,7 @@ export const Header = () => {
                         />
                     </svg>
                     <span>Ebook Manager</span>
-                </a>
+                </Link>
             </div>
             <div className="flex-none">
                 <ul className="menu menu-horizontal p-0">
@@ -38,7 +42,7 @@ export const Header = () => {
                         </a>
                         <ul className="p-2 bg-base-100">
                             <li>
-                                <a className="flex items-center">
+                                <Link to="/login" className="flex items-center">
                                     <svg
                                         xmlns="http://www.w3.org/2000/svg"
                                         fill="none"
@@ -54,10 +58,10 @@ export const Header = () => {
                                         />
                                     </svg>
                                     <span>Sign in</span>
-                                </a>
+                                </Link>
                             </li>
                             <li>
-                                <a className="flex items-center">
+                                <Link to="/register" className="flex items-center">
                                     <svg
                                         xmlns="http://www.w3.org/2000/svg"
                                         fill="none"
@@ -74,7 +78,7 @@ export const Header = () => {
                                     </svg>
 
                                     <span>Register</span>
-                                </a>
+                                </Link>
                             </li>
                         </ul>
                     </li>
