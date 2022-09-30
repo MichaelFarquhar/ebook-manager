@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 
 export const Header = () => {
     return (
-        <div className="navbar bg-base-100">
+        <div className="navbar bg-base-100 mt-4 mb-10">
             <div className="flex-1">
                 <Link
                     className="btn btn-ghost normal-case text-xl flex items-centers space-x-2"
