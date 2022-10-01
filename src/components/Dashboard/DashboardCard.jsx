@@ -5,7 +5,7 @@ export const DashboardCard = () => {
     return (
         <div>
             <Link
-                to="/file/test"
+                to="/file/filename.pdf"
                 className="card card-compact w-max bg-base-100 shadow-xl hover:bg-slate-100 transition"
             >
                 <figure>
