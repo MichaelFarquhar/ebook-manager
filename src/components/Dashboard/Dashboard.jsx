@@ -5,7 +5,7 @@ import { DashboardMenu } from './DashboardMenu';
 
 export const Dashboard = () => {
     return (
-        <div class="container mx-auto">
+        <div className="container mx-auto">
             <Header />
             <DashboardMenu />
             <DashboardCard />

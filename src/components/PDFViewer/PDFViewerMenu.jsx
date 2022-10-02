@@ -1,4 +1,3 @@
-import { useState } from 'react';
 import { Link } from 'react-router-dom';
 import { useRecoilValue, useSetRecoilState } from 'recoil';
 import { currentPageState, totalPagesState } from '../../atoms';
