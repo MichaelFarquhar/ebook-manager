@@ -99,7 +99,7 @@ export const Register = () => {
                                 />
 
                                 {firebaseError && (
-                                    <div className="alert alert-error shadow-lg">
+                                    <div className="alert alert-error shadow-lg mt-2">
                                         {firebaseError}
                                     </div>
                                 )}

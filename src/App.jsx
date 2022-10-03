@@ -3,6 +3,7 @@ import { Login } from './components/Login';
 import { Register } from './components/Register';
 import { Routes, Route } from 'react-router-dom';
 import { PDFViewer } from './components/PDFViewer';
+import { NotFound } from './NotFound';
 
 function App() {
     return (
@@ -13,6 +14,7 @@ function App() {
                     <Route path="login" element={<Login />} />
                     <Route path="register" element={<Register />} />
                     <Route path="file/:filename" element={<PDFViewer />} />
+                    <Route path="*" element={<NotFound />} />
                 </Routes>
                 {/* <PDFViewer /> */}
             </header>

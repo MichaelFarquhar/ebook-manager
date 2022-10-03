@@ -7,7 +7,7 @@ export const useFirebaseError = (initialError) => {
     const setFirebaseError = (error) => {
         let errorString = '';
         switch (error.code) {
-            case 'email-already-in-use':
+            case 'auth/email-already-in-use':
                 errorString = 'Email already in use.';
                 break;
             case 'auth/invalid-email':
