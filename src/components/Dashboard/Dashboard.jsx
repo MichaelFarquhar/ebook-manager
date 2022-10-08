@@ -1,13 +1,13 @@
 import React from 'react';
 import { Header } from '../Header';
 import { DashboardCard } from './DashboardCard';
-import { DashboardMenu } from './DashboardMenu';
+import { DashboardUploadButton } from './DashboardUploadButton';
 
 export const Dashboard = () => {
     return (
         <div className="container mx-auto">
             <Header />
-            <DashboardMenu />
+            <DashboardUploadButton />
             <DashboardCard />
         </div>
     );

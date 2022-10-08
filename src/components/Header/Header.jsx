@@ -18,10 +18,10 @@ export const Header = () => {
     });
 
     return (
-        <div className="navbar bg-base-100 mt-4 mb-10">
+        <div className="navbar bg-base-100 mt-4 mb-10 p-0">
             <div className="flex-1">
                 <Link
-                    className="btn btn-ghost normal-case text-xl flex items-centers space-x-2"
+                    className="normal-case text-xl flex items-center space-x-2"
                     to={'/'}
                 >
                     <svg
@@ -45,7 +45,7 @@ export const Header = () => {
             <div className="flex-none">
                 <ul className="menu menu-horizontal p-0">
                     <li tabIndex={0}>
-                        <a>
+                        <div>
                             Account
                             <svg
                                 className="fill-current"
@@ -56,7 +56,7 @@ export const Header = () => {
                             >
                                 <path d="M7.41,8.58L12,13.17L16.59,8.58L18,10L12,16L6,10L7.41,8.58Z" />
                             </svg>
-                        </a>
+                        </div>
                         {isLoggedIn ? <HeaderDropdownAuth /> : <HeaderDropdown />}
                     </li>
                 </ul>
